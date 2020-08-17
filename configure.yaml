@@ -1,0 +1,57 @@
+Module:
+  num: 64
+  moduleRadius: 28
+
+Robot:
+  num: 4
+  robotFlags: 'robot1,robot2,robot3,ultrasonic'
+  ultrasonicFlag: 'ultrasonic'
+  robot0:
+    modulePosition: 46
+    ip: 192.168.16.181
+  robot1:
+    modulePosition: 58
+    ip: 192.168.16.182
+  robot2:
+    modulePosition: 9
+    ip: 192.168.16.183
+  robot3:
+    modulePosition: 38
+    ip: 192.168.16.185
+
+Sensor:
+  adapterSensor: 4
+  moduleSensor: 17
+  modulePosition: 34
+
+
+Server:
+  port: 8888
+
+Order:
+  catchOrder: can catch
+  dropOrder: can drop
+  waitOrder: wait
+  caughtOrder: catched
+  unrecognizedOrder: unrecognize
+  clearOrder: clear
+  ultraCaughtOrder: ur1_caught
+  ultraInsertedOrder: ur2_inserted
+  ultraInsertedWaitOrder: ur2_inserted-wait
+  ultra1UnrecognizedOrder: ur1_unrecognized
+  ultra2UnrecognizedOrder: ur2_unrecognized
+  ultraCaughtWaitOrder: ur1_caught-wait
+
+DetectParam:
+  maxDetectAdapterTime: 6
+
+Conveyor:
+  io: 16
+  activate: False
+  close: True
+
+Timer:
+  checkMsgTimer:
+    interval: 20000
+  detectTimer:
+    interval: 15
